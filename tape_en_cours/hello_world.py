@@ -1,6 +1,7 @@
 """
 La doc du module
 """
+from numbers import Number
 
 a = "salut les gens"
 2 + "2"
@@ -9,7 +10,7 @@ print(a, a, sep="\\")
 mon_message = "yo"
 
 
-def factorielle(n: int) -> int:
+def factorielle(n: Number) -> Number:
     """Factorielle recursive"""
     if n < 2:
         return 1
