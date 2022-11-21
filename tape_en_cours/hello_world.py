@@ -17,9 +17,3 @@ def factorielle(n: int) -> int:
 factorielle("toto")
 factorielle(3)
 factorielle(3.4)
-
-
-b = 2
-print(a, type(a))
-b = "toto"
-print(a, type(a))
