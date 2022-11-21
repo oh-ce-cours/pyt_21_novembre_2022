@@ -9,7 +9,7 @@ mon_message = "yo"
 
 
 def factorielle(n):
-    """"""
+    """Factorielle recursive"""
     if n < 2:
         return 1
     return n * factorielle(n - 1)
