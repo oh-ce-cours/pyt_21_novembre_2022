@@ -1,6 +1,8 @@
 """
 La doc du module
 """
+import typing
+
 a = "salut les gens"
 2 + "2"
 print(a, a, sep="\\")
