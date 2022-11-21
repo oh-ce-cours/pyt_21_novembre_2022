@@ -1,2 +1,2 @@
-a = "salut \ les gens"
-print(a)
+a = "salut les gens"
+print(a, sep="\")
