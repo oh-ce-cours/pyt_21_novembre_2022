@@ -1,1 +1,1 @@
-print("salut", "les gens")
+print("salut", "les gens", sep="_")
