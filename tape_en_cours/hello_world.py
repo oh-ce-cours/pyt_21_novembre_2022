@@ -13,3 +13,6 @@ def factorielle(n):
         return 1
     else:
         return n * factorielle(n - 1)
+
+
+factorielle(2)
