@@ -15,3 +15,5 @@ def factorielle(n: int) -> int:
 
 
 factorielle("toto")
+factorielle(3)
+factorielle(3.4)
