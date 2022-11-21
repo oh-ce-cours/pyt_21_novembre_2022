@@ -1,2 +1,3 @@
 a = "salut les gens"
-print(a)
+b = print(a)
+print(b)
