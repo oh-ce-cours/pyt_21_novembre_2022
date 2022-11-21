@@ -1,2 +1,2 @@
 a = "salut les gens"
-print(a, a, sep="\\")
+print(a, a, sep=r"\")
