@@ -30,4 +30,4 @@
 #             print(nombre)
 
 for nombre in range(1, 101):
-    zerfgjh
+    pass
