@@ -13,12 +13,12 @@ import time
 # print(time.time() - tic)
 
 
-def divisible_par_3(nombre: int):
-    return nombre % 3 == 0
+def divisible_par_3(nombre_a_diviser: int):
+    return nombre_a_diviser % 3 == 0
 
 
-def divisible_par_5(nombre: int):
-    return nombre % 5 == 0
+def divisible_par_5(nombre_a_diviser: int):
+    return nombre_a_diviser % 5 == 0
 
 
 for nombre in range(1, 101):
