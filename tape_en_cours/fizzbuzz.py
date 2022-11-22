@@ -20,9 +20,9 @@
 
 for nombre in range(1, 101):
     match (nombre % 3, nombre % 5):
-        case pattern-1:
-            action-1
-        case pattern-2:
+        case (0, 0):
+            print("fizzbuzz")
+        case (_, 0):
             action-2
         case pattern-3:
             action-3
