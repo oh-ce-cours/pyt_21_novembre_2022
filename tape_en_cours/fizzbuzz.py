@@ -15,5 +15,5 @@ for nombre in range(1, 101):
     if nombre % 5 == 0:
         res += "buzz"
     if not res:
-        ...
+        res = str(nombre)
     print(res)
