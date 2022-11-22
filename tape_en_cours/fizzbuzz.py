@@ -1,12 +1,13 @@
 # for nombre in range(1, 101):
-#     if nombre % 3 == 0 and nombre % 5 == 0:
-#         print("fizz")
-#     elif nombre % 5 == 0:
-#         print("buzz")
-#     elif nombre % 3 == 0:
-#         print("fizzbuzz")
-#     else:
-#         print(nombre)
+    est_divible_3 = nombre % 3 == 0
+    if est_divible_3 and nombre % 5 == 0:
+        print("fizz")
+    elif nombre % 5 == 0:
+        print("buzz")
+    elif est_divible_3:
+        print("fizzbuzz")
+    else:
+        print(nombre)
 
 # for nombre in range(1, 101):
 #     res = ""
