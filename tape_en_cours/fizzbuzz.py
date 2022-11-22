@@ -19,7 +19,7 @@
 #     print(res)
 
 for nombre in range(1, 101):
-    match nombre % 3, nombre %5:
+    match (nombre % 3, nombre % 5):
         case pattern-1:
             action-1
         case pattern-2:
