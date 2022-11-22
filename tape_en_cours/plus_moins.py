@@ -8,10 +8,10 @@ NOMBRE_A_TROUVER = random.randint(0, 100)
 
 def mon_input() -> int:
     try:
-        mon_entree = int(input("Entrez un nombre : "))
+        return int(input("Entrez un nombre : "))
     except ValueError:
         print("On a dit un nombre, svp")
-        continue
+        return None
 
 
 while True:
