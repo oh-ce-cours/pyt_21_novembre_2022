@@ -33,5 +33,5 @@ import time
 #         case _, _:
 #             print(nombre)
 
-for nombre in range(1, 101):
-    print("fizz" * (nombre % 3 == 0) + "buzz" * (nombre % 5 == 0) or str(nombre))
+# for nombre in range(1, 101):
+#     print("fizz" * (nombre % 3 == 0) + "buzz" * (nombre % 5 == 0) or str(nombre))
