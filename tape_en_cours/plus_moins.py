@@ -7,7 +7,7 @@ while True:
     try:
         mon_entree = int(input("Entrez un nombre : "))
     except ValueError:
-        pass
+        print("On a dit un nombre, svp")
     if NOMBRE_A_TROUVER > mon_entree:
         print("c'est plus")
     elif NOMBRE_A_TROUVER < mon_entree:
