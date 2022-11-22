@@ -1,2 +1,2 @@
 mon_entree = input()
-print(mon_entree)
+print(mon_entree, type(mon_entree))
