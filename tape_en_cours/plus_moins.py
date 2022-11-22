@@ -1,7 +1,9 @@
 """
 Un jeu super !
 """
-NOMBRE_A_TROUVER = 10
+import random
+
+NOMBRE_A_TROUVER = random.randint(0, 100)
 
 while True:
     try:
