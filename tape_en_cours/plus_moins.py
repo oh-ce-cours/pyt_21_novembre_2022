@@ -16,8 +16,6 @@ def mon_input() -> int:
             continue
 
 
-mon_input()
-print("on rentre dans le while")
 while True:
     mon_entree = mon_input()
     if NOMBRE_A_TROUVER > mon_entree:
