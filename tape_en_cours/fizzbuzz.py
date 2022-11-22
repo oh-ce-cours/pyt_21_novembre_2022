@@ -1,3 +1,6 @@
+import time
+
+tic = time.time()
 for nombre in range(1, 101):
     if nombre % 3 == 0 and nombre % 5 == 0:
         print("fizz")
@@ -7,6 +10,7 @@ for nombre in range(1, 101):
         print("fizzbuzz")
     else:
         print(nombre)
+print(time.time() - tic)
 
 # for nombre in range(1, 101):
 #     res = ""
