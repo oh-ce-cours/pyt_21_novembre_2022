@@ -1,2 +1,2 @@
-for nombre in range(101, 0, -1):
+for nombre in range(100, 0, -1):
     print(nombre)
