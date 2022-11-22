@@ -11,4 +11,4 @@ while NOMBRE_A_TROUVER != mon_entree:
         print("c'est plus")
     else:
         print("c'est ça")
-    mon_entree = input("Entrez un nombre : ")
+    mon_entree = int(input("Entrez un nombre : "))
