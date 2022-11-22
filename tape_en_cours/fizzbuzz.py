@@ -14,7 +14,7 @@ import time
 
 
 def est_divisible_par(nombre_a_diviser, diviseur):
-    return nombre_a_diviser % diviseur == 0
+    nombre_a_diviser % diviseur == 0
     # return nombre_a_diviser // diviseur == nombre_a_diviser / diviseur
 
 
