@@ -5,3 +5,4 @@ print(locals(), globals())
 from numpy import *
 
 print(locals(), globals())
+print(str)
