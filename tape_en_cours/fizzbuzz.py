@@ -18,13 +18,13 @@
 #         res = str(nombre)
 #     print(res)
 
-for nombre in range(1, 101):
-    match (nombre % 3, nombre % 5):
-        case (0, 0):
-            print("fizzbuzz")
-        case (_, 0):
-            print("buzz")
-        case (0, _):
-            print("fizz")
-        case _, _:
-            print(nombre)
+# for nombre in range(1, 101):
+#     match (nombre % 3, nombre % 5):
+#         case (0, 0):
+#             print("fizzbuzz")
+#         case (_, 0):
+#             print("buzz")
+#         case (0, _):
+#             print("fizz")
+#         case _, _:
+#             print(nombre)
