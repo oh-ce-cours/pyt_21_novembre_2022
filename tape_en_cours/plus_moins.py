@@ -2,11 +2,12 @@
 Un jeu super !
 """
 import random
+from typing import Optional
 
 NOMBRE_A_TROUVER = random.randint(0, 100)
 
 
-def mon_input() -> int:
+def mon_input() -> Optional[int]:
     try:
         return int(input("Entrez un nombre : "))
     except ValueError:
