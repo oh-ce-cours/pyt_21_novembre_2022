@@ -18,7 +18,7 @@ def nombre_divisible_par_n(nombre_a_diviser, diviseur):
 
 
 def divisible_par_3(nombre_a_diviser: int):
-    return
+    return nombre_divisible_par_n(nombre_a_diviser, 3)
 
 
 def divisible_par_5(nombre_a_diviser: int):
