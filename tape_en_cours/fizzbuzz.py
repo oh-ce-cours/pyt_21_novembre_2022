@@ -23,8 +23,8 @@ for nombre in range(1, 101):
         case (0, 0):
             print("fizzbuzz")
         case (_, 0):
-            action-2
-        case pattern-3:
-            action-3
-        case _:
-            action-default
+            print("buzz")
+        case (0, _):
+            print("fizz")
+        case _, _:
+            print(nombre)
