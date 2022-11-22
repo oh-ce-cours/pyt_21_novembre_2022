@@ -10,7 +10,7 @@ while True:
         print("c'est plus")
     elif NOMBRE_A_TROUVER < mon_entree:
         print("c'est moins")
-    else NOMBRE_A_TROUVER < mon_entree:
+    else:
         print("c'est ça")
         break
 print("Gagné")
