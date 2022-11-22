@@ -17,7 +17,7 @@ def mon_input() -> Optional[int]:
 
 while True:
     mon_entree = mon_input()
-    if mon_entree is None:
+    if mon_entree:
         continue
     if NOMBRE_A_TROUVER > mon_entree:
         print("c'est plus")
