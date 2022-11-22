@@ -28,3 +28,6 @@
 #             print("fizz")
 #         case _, _:
 #             print(nombre)
+
+for nombre in range(1, 101):
+    pass
