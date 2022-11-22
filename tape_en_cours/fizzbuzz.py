@@ -12,11 +12,20 @@ import time
 #         print(nombre)
 # print(time.time() - tic)
 
+
+def divisible_par_3(nombre):
+    return nombre % 3 == 0
+
+
+def divisible_par_5(nombre):
+    return nombre % 5 == 0
+
+
 for nombre in range(1, 101):
     res = ""
-    if nombre % 3 == 0:
+    if divisible_par_3(nombre):
         res += "fizz"
-    if nombre % 5 == 0:
+    if divisible_par_5(nombre):
         res += "buzz"
     if not res:
         res = str(nombre)
