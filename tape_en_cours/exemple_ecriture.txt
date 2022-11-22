@@ -1,2 +1,1 @@
-salut les amis
-il fait froid aujourd'hui
+["salut les amis\n", "il fait froid aujourd'hui"]
