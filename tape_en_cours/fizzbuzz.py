@@ -22,7 +22,7 @@ def divisible_par_3(nombre_a_diviser: int):
 
 
 def divisible_par_5(nombre_a_diviser: int):
-    return nombre_a_diviser % 5 == 0
+    return nombre_divisible_par_n(nombre_a_diviser, 5)
 
 
 for nombre in range(1, 101):
