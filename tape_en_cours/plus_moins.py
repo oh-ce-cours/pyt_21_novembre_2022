@@ -1,3 +1,6 @@
+"""
+Un jeu super !
+"""
 nombre_a_trouver = 10
 mon_entree = input("Entrez un nombre : ")
 
