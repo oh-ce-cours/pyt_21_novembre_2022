@@ -32,7 +32,10 @@ def tail(n: int):
 
 
 def nimporte_quoi():
-
+    with open("./plus_moins.py", encoding="utf8") as f:
+        lines = f.readlines()
+        for line in lines[5:-10:3]:
+            print(line.rstrip())
 
 
 tail(5)
