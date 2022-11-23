@@ -10,7 +10,7 @@ def cat():
 
 def cat_iter():
     with open("./plus_moins.py", encoding="utf8") as f:
-        for line in itertools.islice(f, None, None, 2):
+        for line in itertools.islice(f, 3, 10, 2):
             print(line.rstrip())
 
 
