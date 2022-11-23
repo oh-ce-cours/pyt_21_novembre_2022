@@ -61,11 +61,11 @@ def head():
         for line in lines[:5]:
             print(line.rstrip())
 
+
 @click.command()
-@click.option('--count', default=1, help='Number of greetings.')
-@click.option('--name', prompt='Your name',
-              help='The person to greet.')
-def tail(filename: str, n: int):
+@click.option("--filename", default=1, help="Number of greetings.")
+@click.option("--number", prompt="Your name", help="The person to greet.")
+def tail(filename: str, number: int):
     """Show tail of a file
 
     Args:
