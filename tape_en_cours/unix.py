@@ -71,7 +71,7 @@ def tail(filename: str, n: int):
         lines = f.readlines()
         for line in lines[:-n]:
             print(n)
-            # print(line.rstrip())
+            print(line.rstrip())
 
 
 def tail_lazy():
