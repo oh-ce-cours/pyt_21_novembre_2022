@@ -106,3 +106,4 @@ def nimporte_quoi():
 # filename = "./plus_moins.py"
 # n = 10
 tail()
+# python unix.py -f fizzbuzz.py -n 3
