@@ -107,3 +107,6 @@ def nimporte_quoi():
 # n = 10
 tail()
 # python unix.py -f fizzbuzz.py -n 3
+
+if __name__ == '__main__':
+    hello()
