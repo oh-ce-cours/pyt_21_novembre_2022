@@ -1,4 +1,5 @@
 import itertools
+from collections import deque
 
 
 def cat():
@@ -86,7 +87,8 @@ def tail_lazy():
 
 def tail_lazy_2():
     with open("./plus_moins.py", encoding="utf8") as f:
-        return deque(f, n)
+        
+        return deque(f, 10)
 
 
 def nimporte_quoi():
