@@ -41,7 +41,7 @@ def head_lazy_1():
 def head_lazy_1():
     with open("./plus_moins.py", encoding="utf8") as f:
         line_number = 0
-        for line in f:
+        for index, line in f:
             line_number += 1
             if line_number > 5:
                 break
