@@ -16,8 +16,7 @@ def cat_iter():
 
 def tac():
     with open("./plus_moins.py", encoding="utf8") as f:
-        lines = f.readlines()
-        for line in reversed(lines):
+        for line in reversed(f):
             print(line.rstrip())
 
 
