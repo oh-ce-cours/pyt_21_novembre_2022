@@ -19,11 +19,11 @@ def head():
             print(line.rstrip())
 
 
-def tail(n:int):
+def tail(n: int):
     """Show tail of a file
 
     Args:
-        n (int): _description_
+        n (int): the number of lines to display
     """
     with open("./plus_moins.py", encoding="utf8") as f:
         lines = f.readlines()
