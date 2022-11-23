@@ -75,6 +75,9 @@ def tail_lazy():
         for index, _ in enumerate(f):
             pass
 
+        for line in f:
+            pass
+
 
 
 
