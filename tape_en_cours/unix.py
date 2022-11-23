@@ -81,7 +81,7 @@ def tail_lazy():
     with open("./plus_moins.py", encoding="utf8") as f:
         for index, line in enumerate(f):
             if nb_total - index < 5:
-                print(line)
+                print(line.rstrip())
 
 
 def nimporte_quoi():
