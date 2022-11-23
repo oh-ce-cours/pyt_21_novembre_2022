@@ -1,7 +1,7 @@
 print("dans fichier a")
 
 
-def f():
+def f() -> None:
     """TOTO"""
     print("dans f")
 
