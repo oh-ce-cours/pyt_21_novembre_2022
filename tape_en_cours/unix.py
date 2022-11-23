@@ -47,7 +47,7 @@ def head_lazy_1():
 
 def head_lazy_2():
     with open("./plus_moins.py", encoding="utf8") as f:
-        for line_number, line in enumerate(f):
+        for line_number, line in zip(f):
             if line_number > 5:
                 break
             print(line.rstrip())
