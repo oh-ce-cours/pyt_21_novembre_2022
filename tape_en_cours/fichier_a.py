@@ -5,5 +5,6 @@ def f() -> None:
     """TOTO"""
     print("dans f")
 
-if nam
-f()
+
+if __name__ == "__main__":
+    f()
