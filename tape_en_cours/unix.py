@@ -84,6 +84,11 @@ def tail_lazy():
                 print(line.rstrip())
 
 
+def tail_lazy_2():
+        with open(filename) as f:
+        return deque(f, n)
+
+
 def nimporte_quoi():
     with open("./plus_moins.py", encoding="utf8") as f:
         lines = f.readlines()
