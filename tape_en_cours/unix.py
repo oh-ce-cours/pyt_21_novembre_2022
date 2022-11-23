@@ -101,5 +101,4 @@ def nimporte_quoi():
 
 filename = "./plus_moins.py"
 n = 10
-print(sys.argv)
-# tail(filename, n)
+tail(sys.argv[1], )
