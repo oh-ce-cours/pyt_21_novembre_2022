@@ -19,7 +19,8 @@ def head():
             print(line.rstrip())
 
 
-def tail():
+def tail(n:int):
+    """"""
     with open("./plus_moins.py", encoding="utf8") as f:
         lines = f.readlines()
         for line in lines[:-5]:
