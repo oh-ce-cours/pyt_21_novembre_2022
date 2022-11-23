@@ -98,6 +98,6 @@ def nimporte_quoi():
             print(line.rstrip())
 
 
-filename = "./plus_ou_moins.py"
+filename = "./plus_moins.py"
 n = 10
 tail(filename, n)
