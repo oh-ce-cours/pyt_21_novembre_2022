@@ -98,5 +98,5 @@ def nimporte_quoi():
             print(line.rstrip())
 
 
-filename 
+filename = "./"
 tail(filename, n)
