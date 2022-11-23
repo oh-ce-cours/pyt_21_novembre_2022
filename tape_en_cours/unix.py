@@ -98,4 +98,4 @@ def nimporte_quoi():
             print(line.rstrip())
 
 
-tail_lazy_2()
+tail()
