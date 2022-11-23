@@ -27,13 +27,16 @@ def head():
         for line in lines[:5]:
             print(line.rstrip())
 
+
 def head_lazy_1():
     with open("./plus_moins.py", encoding="utf8") as f:
         line_number = 0
         for line in f:
             line_number += 1
-            if line
+            if line_number > 5:
+                break
             print(line.rstrip())
+
 
 def head():
     with open("./plus_moins.py", encoding="utf8") as f:
