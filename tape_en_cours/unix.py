@@ -90,8 +90,8 @@ def tail_lazy_2():
         q = deque(maxlen=10)
         for line in f:
             print(q)
-            deque.append(line)
-    print(deque)
+            q.append(line)
+    print(q)
 
 
 def nimporte_quoi():
@@ -101,4 +101,4 @@ def nimporte_quoi():
             print(line.rstrip())
 
 
-tail_lazy()
+tail_lazy_2()
