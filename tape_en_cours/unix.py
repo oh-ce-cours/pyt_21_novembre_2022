@@ -87,10 +87,7 @@ def tail_lazy():
 
 def tail_lazy_2():
     with open("./plus_moins.py", encoding="utf8") as f:
-        q = deque(maxlen=10)
-        for line in f:
-            print(q)
-            q.append(line)
+        q = deque(f, maxlen=10)
     print(q)
 
 
