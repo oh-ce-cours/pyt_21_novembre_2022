@@ -76,6 +76,7 @@ def tail_lazy():
         for index, _ in enumerate(f):
             pass
         nb_total = index
+        print(nb_total)
         for index, line in enumerate(f):
             if nb_total - index < 5:
                 print(line)
