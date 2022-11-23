@@ -1,6 +1,6 @@
 import itertools
 from collections import deque
-
+import sys
 
 def cat():
     with open("./plus_moins.py", encoding="utf8") as f:
@@ -100,4 +100,5 @@ def nimporte_quoi():
 
 filename = "./plus_moins.py"
 n = 10
+
 tail(filename, n)
