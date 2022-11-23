@@ -27,10 +27,10 @@ def head():
         for line in lines[:5]:
             print(line.rstrip())
 
-def head_laszy_1():
+def head_lazy_1():
     with open("./plus_moins.py", encoding="utf8") as f:
-        lines = f.readlines()
-        for line in lines[:5]:
+        
+        for line in f:
             print(line.rstrip())
 
 def head():
