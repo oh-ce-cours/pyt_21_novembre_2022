@@ -25,6 +25,6 @@ def tail():
         for line in lines[-5:]:
             print(line.rstrip())
 
-def
+def nimporte_quoi():
 
 tail()
