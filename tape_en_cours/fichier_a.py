@@ -6,4 +6,4 @@ def f() -> None:
     print("dans f")
 
 
-# f()
+f()
