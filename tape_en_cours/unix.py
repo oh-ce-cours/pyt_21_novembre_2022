@@ -98,4 +98,5 @@ def nimporte_quoi():
             print(line.rstrip())
 
 
-tail(".")
+filename 
+tail(filename, n)
