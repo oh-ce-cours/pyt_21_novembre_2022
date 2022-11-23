@@ -99,6 +99,6 @@ def nimporte_quoi():
             print(line.rstrip())
 
 
-filename = "./plus_moins.py"
-n = 10
-tail(sys.argv[1], )
+# filename = "./plus_moins.py"
+# n = 10
+tail(sys.argv[1], sys.argv[2])
