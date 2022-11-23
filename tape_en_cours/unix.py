@@ -1,5 +1,6 @@
 import itertools
 
+
 def cat():
     with open("./plus_moins.py", encoding="utf8") as f:
         lines = f.readlines()
@@ -9,7 +10,7 @@ def cat():
 
 def cat_iter():
     with open("./plus_moins.py", encoding="utf8") as f:
-        for line in itertools.islice(f, :
+        for line in itertools.islice(f, step=2):
             print(line.rstrip())
 
 
