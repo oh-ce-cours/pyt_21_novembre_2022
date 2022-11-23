@@ -1,6 +1,7 @@
 import itertools
 from collections import deque
 import sys
+import click
 
 
 def cat():
