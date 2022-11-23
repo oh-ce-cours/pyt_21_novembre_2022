@@ -78,4 +78,4 @@ def nimporte_quoi():
             print(line.rstrip())
 
 
-head_lazy_1()
+head_lazy_2()
