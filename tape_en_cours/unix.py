@@ -7,7 +7,7 @@ def cat():
 
 def cat_iter():
     with open("./plus_moins.py", encoding="utf8") as f:
-        for line in f:
+        for line in f[1:3]:
             print(line.rstrip())
 
 
@@ -44,4 +44,4 @@ def nimporte_quoi():
             print(line.rstrip())
 
 
-tail(5)
+cat_iter(5)
