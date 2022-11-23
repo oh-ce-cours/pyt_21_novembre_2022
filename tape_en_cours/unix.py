@@ -72,9 +72,10 @@ def tail(n: int):
 
 def tail_lazy():
     with open("./plus_moins.py", encoding="utf8") as f:
-        for index, _ in f:
+        for index, _ in enumerate(f):
             pass
-        
+
+
 
 
 
