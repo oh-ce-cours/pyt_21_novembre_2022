@@ -4,10 +4,10 @@ def cat():
         for line in lines:
             print(line.rstrip())
 
+
 def cat_iter():
     with open("./plus_moins.py", encoding="utf8") as f:
-        lines = f.readlines()
-        for line in lines:
+        for line in f:
             print(line.rstrip())
 
 
