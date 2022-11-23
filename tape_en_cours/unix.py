@@ -75,8 +75,8 @@ def tail_lazy():
         for index, _ in enumerate(f):
             pass
         nb_total = index
-        for line in f:
-            if
+        for index, line in enumerate(f):
+            if n
 
 
 
