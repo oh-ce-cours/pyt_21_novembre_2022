@@ -1,2 +1,2 @@
-print("dans fichier a")
 
+print("dans fichier b")
