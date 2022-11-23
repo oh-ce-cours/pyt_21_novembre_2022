@@ -7,7 +7,7 @@ def cat():
 
 def cat_iter():
     with open("./plus_moins.py", encoding="utf8") as f:
-        for line in f[1:3]:
+        for line in f:
             print(line.rstrip())
 
 
