@@ -64,16 +64,16 @@ def head():
 
 @click.command()
 @click.option("--filename", help="File to tail.")
-@click.option("--number", default=10, help="The person to greet.")
+@click.option("--number", default=10, help="NUmber of lines to display.")
 def tail(filename: str, number: int):
     """Show tail of a file
 
     Args:
-        n (int): the number of lines to display
+        number (int): the number of lines to display
     """
     with open(filename, encoding="utf8") as f:
         lines = f.readlines()
-        for line in lines[-n:]:
+        for line in lines[-number:]:
             print(line.rstrip())
 
 
