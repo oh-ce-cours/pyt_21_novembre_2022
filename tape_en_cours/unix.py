@@ -20,7 +20,11 @@ def head():
 
 
 def tail(n:int):
-    """"""
+    """Show tail of a file
+
+    Args:
+        n (int): _description_
+    """
     with open("./plus_moins.py", encoding="utf8") as f:
         lines = f.readlines()
         for line in lines[:-5]:
