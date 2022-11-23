@@ -63,8 +63,8 @@ def head():
 
 
 @click.command()
-@click.option("--filename", default=1, help="Number of greetings.")
-@click.option("--number", prompt="Your name", help="The person to greet.")
+@click.option("--filename",  help="Number of greetings.")
+@click.option("--number", default=10, prompt="Your name", help="The person to greet.")
 def tail(filename: str, number: int):
     """Show tail of a file
 
