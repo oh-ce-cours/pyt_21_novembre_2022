@@ -48,7 +48,7 @@ def head_lazy_1():
 
 def head_lazy_2():
     with open("./plus_moins.py", encoding="utf8") as f:
-        for line, _ in zip(f, range(5)):
+        for _, _ in zip(f, range(5)):
             print(line.rstrip())
 
 
