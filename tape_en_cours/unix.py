@@ -80,7 +80,6 @@ def tail_lazy():
 
     with open("./plus_moins.py", encoding="utf8") as f:
         for index, line in enumerate(f):
-            print(nb_total - index)
             if nb_total - index < 5:
                 print(line)
 
