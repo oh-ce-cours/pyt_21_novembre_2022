@@ -19,4 +19,4 @@ def head():
             print(line.rstrip())
 
 
-tac()
+head()
