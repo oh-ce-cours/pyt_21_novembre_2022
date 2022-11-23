@@ -27,6 +27,12 @@ def head():
         for line in lines[:5]:
             print(line.rstrip())
 
+def head():
+    with open("./plus_moins.py", encoding="utf8") as f:
+        lines = f.readlines()
+        for line in lines[:5]:
+            print(line.rstrip())
+
 
 def tail(n: int):
     """Show tail of a file
