@@ -22,7 +22,7 @@ def head():
 def tail():
     with open("./plus_moins.py", encoding="utf8") as f:
         lines = f.readlines()
-        for line in lines[-5:]:
+        for line in lines[:-5]:
             print(line.rstrip())
 
 def nimporte_quoi():
