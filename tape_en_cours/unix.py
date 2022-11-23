@@ -44,4 +44,4 @@ def nimporte_quoi():
             print(line.rstrip())
 
 
-cat_iter(5)
+cat_iter()
