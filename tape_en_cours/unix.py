@@ -35,7 +35,8 @@ def head_lazy_1():
             line_number += 1
             if line_number > 5:
                 break
-            print(line.rstrip())
+            if line_
+            # print(line.rstrip())
 
 
 def head_lazy_1():
