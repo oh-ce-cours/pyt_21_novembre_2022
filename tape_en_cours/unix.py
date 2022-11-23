@@ -61,7 +61,10 @@ def head():
         for line in lines[:5]:
             print(line.rstrip())
 
-
+@click.command()
+@click.option('--count', default=1, help='Number of greetings.')
+@click.option('--name', prompt='Your name',
+              help='The person to greet.')
 def tail(filename: str, n: int):
     """Show tail of a file
 
