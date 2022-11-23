@@ -32,7 +32,7 @@ def tail(n: int):
 
 
 def nimporte_quoi():
-    pass
+
 
 
 tail(5)
