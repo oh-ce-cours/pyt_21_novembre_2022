@@ -15,7 +15,7 @@ def tac():
 def head():
     with open("./plus_moins.py", encoding="utf8") as f:
         lines = f.readlines()
-        for line in lines[:5]:
+        for line in lines[0:5]:
             print(line.rstrip())
 
 
