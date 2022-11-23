@@ -70,7 +70,8 @@ def tail(filename: str, n: int):
     with open(filename, encoding="utf8") as f:
         lines = f.readlines()
         for line in lines[:-n]:
-            print(line.rstrip())
+            print(n)
+            # print(line.rstrip())
 
 
 def tail_lazy():
