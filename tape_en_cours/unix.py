@@ -65,6 +65,9 @@ def head():
 @click.command()
 @click.option("--filename", help="File to tail.")
 @click.option("--number", default=10, help="NUmber of lines to display.")
+def cmd_tail(filename, number):
+    
+
 def tail(filename: str, number: int):
     """Show tail of a file
 
