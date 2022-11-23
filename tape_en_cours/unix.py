@@ -60,13 +60,13 @@ def head():
             print(line.rstrip())
 
 
-def tail(n: int):
+def tail(filename: str, n: int):
     """Show tail of a file
 
     Args:
         n (int): the number of lines to display
     """
-    with open("./plus_moins.py", encoding="utf8") as f:
+    with open(filename, encoding="utf8") as f:
         lines = f.readlines()
         for line in lines[:-n]:
             print(line.rstrip())
