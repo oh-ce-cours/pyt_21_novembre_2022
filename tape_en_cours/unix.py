@@ -70,16 +70,15 @@ def tail(n: int):
         for line in lines[:-n]:
             print(line.rstrip())
 
+
 def tail_lazy():
     with open("./plus_moins.py", encoding="utf8") as f:
         for index, _ in enumerate(f):
             pass
         nb_total = index
         for index, line in enumerate(f):
-            if n
-
-
-
+            if nb_total - index < 5:
+                print(line)
 
 
 def nimporte_quoi():
