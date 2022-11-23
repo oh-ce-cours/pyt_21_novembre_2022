@@ -1,4 +1,4 @@
-print("dans fichier a", __name__)
+print("dans fichier a", f"{__name__=})
 
 
 def f() -> None:
