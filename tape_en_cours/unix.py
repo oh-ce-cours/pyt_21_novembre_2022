@@ -2,6 +2,7 @@ import itertools
 from collections import deque
 import sys
 
+
 def cat():
     with open("./plus_moins.py", encoding="utf8") as f:
         lines = f.readlines()
@@ -100,5 +101,5 @@ def nimporte_quoi():
 
 filename = "./plus_moins.py"
 n = 10
-
-tail(filename, n)
+print(sys.argv)
+# tail(filename, n)
