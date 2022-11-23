@@ -1,5 +1,6 @@
-print("dans fichier a", f"{__name__=}")
 import fichier_b
+
+print("dans fichier a", f"{__name__=}")
 
 
 def f() -> None:
