@@ -1,1 +1,2 @@
-def 
+def f():
+    print("dans f")
