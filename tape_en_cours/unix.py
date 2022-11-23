@@ -12,4 +12,4 @@ def tac():
             print(line.rstrip())
 
 
-cat()
+tac()
