@@ -74,9 +74,9 @@ def tail_lazy():
     with open("./plus_moins.py", encoding="utf8") as f:
         for index, _ in enumerate(f):
             pass
-
+        nb_total = index
         for line in f:
-            pass
+            if
 
 
 
