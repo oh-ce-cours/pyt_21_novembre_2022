@@ -1,7 +1,7 @@
 variable = 1
 
 
-def example():
+def example(res=3):
     res = 3
     print(f"{locals()=}")
     print(f"{globals()=}")
