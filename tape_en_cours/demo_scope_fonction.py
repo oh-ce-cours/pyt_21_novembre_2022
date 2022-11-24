@@ -2,9 +2,7 @@ variable = 1
 
 
 def example():
-    global res
-    if res == None:
-        res = 3
+    
     print(f"{locals()=}")
     print(f"{globals()=}")
     print(res, variable)
