@@ -4,7 +4,7 @@ variable = 1
 def example():
     if not hasattr(example, "toto"):
         print("on configure un truc long à configurer")
-        example.toto = 3
+        example.toto = 
     print(example.toto)
     # print(f"{locals()=}")
     # print(f"{globals()=}")
