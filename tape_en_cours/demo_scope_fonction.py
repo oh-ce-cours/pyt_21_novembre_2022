@@ -5,9 +5,9 @@ def example():
     if not hasattr(example, "toto"):
         example.toto = 3
     print(example.toto)
-    print(f"{locals()=}")
-    print(f"{globals()=}")
-    print(res, variable)
+    # print(f"{locals()=}")
+    # print(f"{globals()=}")
+    # print(res, variable)
 
 
 # def modifie_variable_ok():
