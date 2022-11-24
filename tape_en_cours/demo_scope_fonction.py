@@ -26,5 +26,5 @@ def example():
 # modifie_variable_ok2()
 example()
 example()
-print(example.compteur)
+print(example.comptage)
 print(variable)
