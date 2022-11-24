@@ -1,7 +1,5 @@
 variable = 1
 
-res = None
-
 
 def example():
     global res
