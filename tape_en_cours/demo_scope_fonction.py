@@ -3,6 +3,7 @@ variable = 1
 
 def example():
     if not hasattr(example, "toto"):
+        print("on configure un truc long à configurer")
         example.toto = 3
     print(example.toto)
     # print(f"{locals()=}")
@@ -22,5 +23,6 @@ def example():
 
 # modifie_variable_ok()
 # modifie_variable_ok2()
+example()
 example()
 print(variable)
