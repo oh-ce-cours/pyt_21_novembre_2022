@@ -1,12 +1,14 @@
-    """bla
-    """
-def f2():
+"""bla
+"""
+
+
+def f_2():
     """bla"""
     print("dans f2")
     f1()
 
 
-def f1():
+def f_1():
     """bla"""
     print("dans f1")
 
