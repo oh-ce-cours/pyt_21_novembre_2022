@@ -2,7 +2,7 @@ variable = 1
 
 
 def example():
-    if not hasattr(example, "toto"):
+    if not hasattr(example, "comptage"):
         print("on configure un truc long à configurer")
         example.comptage = 0
     example.comptage += 1
