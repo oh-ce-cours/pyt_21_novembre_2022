@@ -5,7 +5,7 @@
 def f_2():
     """bla"""
     print("dans f2")
-    f1()
+    f_1()
 
 
 def f_1():
@@ -13,4 +13,4 @@ def f_1():
     print("dans f1")
 
 
-f2()
+f_2()
