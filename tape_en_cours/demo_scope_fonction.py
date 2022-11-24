@@ -1,7 +1,10 @@
 variable = 1
 
+
 def example():
-    
+    res = 3
+    print(res, variable)
+
 
 # def modifie_variable_ok():
 #     global variable
