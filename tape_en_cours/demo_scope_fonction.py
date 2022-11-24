@@ -5,8 +5,8 @@ def example():
     if not hasattr(example, "toto"):
         print("on configure un truc long à configurer")
         example.comptage = 0
+    example.comptage += 1
     print(example.comptage)
-    print()
     # print(f"{locals()=}")
     # print(f"{globals()=}")
     # print(res, variable)
