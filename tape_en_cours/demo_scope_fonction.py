@@ -16,6 +16,7 @@ def example():
 #     variable += 1
 
 
-modifie_variable_ok()
-modifie_variable_ok2()
+# modifie_variable_ok()
+# modifie_variable_ok2()
+example()
 print(variable)
