@@ -3,6 +3,7 @@ variable = 1
 
 def example():
     res = 3
+    print(locals()), globals())
     print(res, variable)
 
 
