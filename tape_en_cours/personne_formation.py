@@ -2,10 +2,10 @@ class France:
     def __init__(self):
         self.age_majorite = 18
 
-class France:
-    def __init__(self):
-        self.age_majorite = 18
 
+class USA:
+    def __init__(self):
+        self.age_majorite = 21
 
 
 class Personne:
