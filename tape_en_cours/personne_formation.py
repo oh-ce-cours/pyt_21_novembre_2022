@@ -1,15 +1,15 @@
-# class Pays:
-#     pass
+class Pays:
+    pass
 
 
-# class France(Pays):
-#     def __init__(self):
-#         self.age_majorite = 18
+class France(Pays):
+    def __init__(self):
+        self.age_majorite = 18
 
 
-# class USA(Pays):
-#     def __init__(self):
-#         self.age_majorite = 21
+class USA(Pays):
+    def __init__(self):
+        self.age_majorite = 21
 
 
 pays = {"USA": 21, "France": 18}
