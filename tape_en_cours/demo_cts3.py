@@ -48,3 +48,8 @@ andouillette = CTS3("192.168.142.1", log=True)
 andouillette.champ = 10_000
 time.sleep(5)
 andouillette.close()
+
+with CTS3("192.168.142.1", log=True) as endo
+andouillette.champ = 10_000
+time.sleep(5)
+andouillette.close()
