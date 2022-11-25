@@ -28,7 +28,9 @@ class CTS3:
             ni_cts3.ResourceType.CTS3_DAQ_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
         )
-        Daq.Daq_SetChannel(getattr(Daq.DaqChannel, CH_1_SMA), True, Daq.DaqRange.RANGE_2000)
+        Daq.Daq_SetChannel(
+            getattr(Daq.DaqChannel, f"CH_{channel}_SMA"), True, Daq.DaqRange.RANGE_2000
+        )
         Daq.Daq_SetTimeBase(Daq.DaqSamplingClk.SCLK_150MHZ, 100_000)
         Daq.Daq_SetTrigger(
             Daq.DaqTrigSource.TRIG_CH1,
