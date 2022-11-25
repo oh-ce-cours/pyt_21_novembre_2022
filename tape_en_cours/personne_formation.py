@@ -8,4 +8,6 @@ class Personne:
     def est_majeur(self):
         return (2022 - self.naissance) > self.AGE_MAJORITE
 
-p = Personne(1990, "Matthieu")
+p1 = Personne(1990, "Matthieu")
+p2 = Personne(1990, "Matthieu")
+p3 = Personne(1990, "Matthieu")
