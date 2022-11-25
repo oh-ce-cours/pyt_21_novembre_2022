@@ -19,7 +19,7 @@ class Personne:
 
 
 france = France()
-p1 = Personne(1990, "Matthieu", zerty=france)
+p1 = Personne(1990, "Matthieu", nationalite=france)
 p2 = Personne(1991, "Matthieu")
 p3 = Personne(1993, "Matthieu")
 
