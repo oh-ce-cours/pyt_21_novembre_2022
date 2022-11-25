@@ -1,3 +1,5 @@
 
-# print("dans fichier b", f"{__name__=}")
-# fichier_a.f()
+# andouillette = CTS3("192.168.142.1", log=True)
+# andouillette.champ = 10_000
+# time.sleep(2)
+# andouillette.close()

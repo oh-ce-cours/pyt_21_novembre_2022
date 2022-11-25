@@ -73,10 +73,10 @@ class CTS3:
 # time.sleep(5)
 # ni_cts3.CloseCommunication()
 
-andouillette = CTS3("192.168.142.1", log=True)
-andouillette.champ = 10_000
-time.sleep(2)
-andouillette.close()
+# andouillette = CTS3("192.168.142.1", log=True)
+# andouillette.champ = 10_000
+# time.sleep(2)
+# andouillette.close()
 
 with CTS3("192.168.142.1", log=True) as andouillette:
     andouillette.champ = 10_000
