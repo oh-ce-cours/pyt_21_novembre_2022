@@ -25,7 +25,7 @@ from ni_cts3 import LibraryMode, ResourceBlockingMode
 from ni_cts3.Nfc import NfcMode, NfcDataRate
 
 cts_ip = "192.168.142.1"
-resource_id = None
+resource_id = MPOS_GetResourceID()
 
 ############
 # HELPERS
@@ -35,8 +35,6 @@ def init():
     SetDLLDebugMode(".\\dll_debug.log")
     OpenCommunication(cts_ip)
 
-    global resource_id
-    resource_id = MPOS_GetResourceID()
     MPOS_OpenResource(
         resource_id=resource_id, blocking_mode=ResourceBlockingMode.OVERRIDE
     )
