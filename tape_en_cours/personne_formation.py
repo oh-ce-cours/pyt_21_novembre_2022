@@ -1,6 +1,7 @@
-class Personne:
-    AGE_MAJORITE = [1]
+class France:
+    
 
+class Personne:
     def __init__(self, naissance, nom):
         self.naissance = naissance
         self.nom = nom
