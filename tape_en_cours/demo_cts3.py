@@ -13,11 +13,10 @@ class CTS3:
         self.ip = ip
         self.log_file = Path(__file__).with_suffix(".log")
         print(self.log_file)
+        ni_cts3.SetDLLDebugMode(self.log_file)
         ni_cts3.OpenCommunication(ip, log=log)
         self.set_NFC()
         self.set_dac()
-        ni_cts3.SetDLLMode()
-        ni_cts3.SetDLLDebugMode(self.log_file)
         # ni_cts3.MPS_Beep(0.1)
         self.__puissance = None
 
