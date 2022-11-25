@@ -31,3 +31,5 @@ class CTS3:
 # Nfc.MPC_SelectFieldStrength(Nfc.FieldUnit.UNIT_MV_RANGE_25V, 10_000)
 # time.sleep(5)
 # ni_cts3.CloseCommunication()
+
+andouillette = CTS3()
