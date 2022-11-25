@@ -7,7 +7,7 @@ from ni_cts3 import (
     OpenCommunication,
     MPOS_GetResourceID,
     MPOS_OpenResource,
-    ResourceType,
+    
     MPS_ResetHard,
     MPOS_CloseResource,
     CloseCommunication,
