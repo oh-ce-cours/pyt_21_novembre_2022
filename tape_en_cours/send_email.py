@@ -1,4 +1,9 @@
 import smtplib, ssl
+from os.path import basenam
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.mime.application import MIMEApplication
+
 
 port = 587  # For starttls
 smtp_server = "smtp.gmail.com"
