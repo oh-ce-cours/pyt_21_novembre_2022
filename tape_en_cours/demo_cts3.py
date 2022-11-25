@@ -30,7 +30,7 @@ class CTS3:
         Daq.Daq_SetChannel(Daq.DaqChannel.CH_1_SMA, True, Daq.DaqRange.RANGE_2000)
         Daq.Daq_SetTimeBase(Daq.DaqSamplingClk.SCLK_150MHZ, 100_000)
         Daq.Daq_SetTrigger(
-            DaqTrigSource.TRIG_CH1,
+            Daq.DaqTrigSource.TRIG_CH1,
             0,
             Daq.DaqTrigDir.DIR_RISING_EDGE,
             0,
