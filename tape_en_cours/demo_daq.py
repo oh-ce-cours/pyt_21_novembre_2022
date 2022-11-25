@@ -122,7 +122,7 @@ def on_closing() -> None:
 root = None
 host = input("CTS3 hostname: ")
 try:
-    OpenCommunication(host)
+    OpenCommunication("192.168.142.1")
 
     # Open resource
     MPOS_OpenResource()
