@@ -22,12 +22,12 @@ class Personne:
         self.nationalite = nationalite
 
     def est_majeur(self):
-        return (2022 - self.naissance) > self.nationalite.age_majorite
+        return (2022 - self.naissance) > pays[]
 
 
 # france = France()
 # usa = USA()
-p1 = Personne(1990, "Matthieu", nationalite=usa)
+p1 = Personne(1990, "Matthieu", nationalite="France")
 p2 = Personne(1991, "Matthieu")
 p3 = Personne(1993, "Matthieu")
 
