@@ -25,7 +25,10 @@ class CTS3:
         ni_cts3.CloseCommunication()
 
     def __enter__(self):
-        yield self 
+        yield self
+
+    def __exit__(self):
+        
 
 
 # ni_cts3.OpenCommunication("192.168.142.1", log=True)
