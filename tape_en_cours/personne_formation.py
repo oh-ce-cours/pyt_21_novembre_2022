@@ -2,12 +2,17 @@ class France:
     def __init__(self):
         self.age_majorite = 18
 
+class France:
+    def __init__(self):
+        self.age_majorite = 18
+
+
 
 class Personne:
-    def __init__(self, naissance, nom, hjkl: France):
+    def __init__(self, naissance, nom, nationalite: France):
         self.naissance = naissance
         self.nom = nom
-        self.nationalite = hjkl
+        self.nationalite = nationalite
 
     def est_majeur(self):
         return (2022 - self.naissance) > self.nationalite.age_majorite
