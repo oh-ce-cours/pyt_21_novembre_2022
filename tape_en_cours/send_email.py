@@ -9,7 +9,7 @@ port = 587  # For starttls
 smtp_server = "smtp.gmail.com"
 
 
-sender = "admin@example.com"
+sender = "matthieu@falce"
 receiver = "info@example.com"
 
 msg = MIMEMultipart()
