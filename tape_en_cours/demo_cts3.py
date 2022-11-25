@@ -22,7 +22,11 @@ class CTS3:
         # ni_cts3.MPS_Beep(0.1)
         self.__puissance = None
 
-        
+    def set_dac(self):
+        Daq_SetChannel(ACQ_CHANNEL, True, DaqRange.RANGE_2000)
+        Daq_SetTimeBase(DaqSamplingClk.SCLK_150MHZ, points_number)
+        Daq_SetTrigger(TRIGGER, THRESHOLD, DaqTrigDir.DIR_RISING_EDGE, 0)
+
 
     @property
     def champ(self):
