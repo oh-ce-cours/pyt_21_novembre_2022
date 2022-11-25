@@ -28,7 +28,9 @@ class CTS3:
         ni_cts3.Daq_SetTimeBase(
             ni_cts3.DaqSamplingClk.SCLK_150MHZ, ni_cts3.points_number
         )
-        Daq_SetTrigger(TRIGGER, THRESHOLD, DaqTrigDir.DIR_RISING_EDGE, 0)
+        ni_cts3.Daq_SetTrigger(
+            ni_cts3.TRIGGER, ni_cts3.THRESHOLD, ni_cts3.DaqTrigDir.DIR_RISING_EDGE, 0
+        )
 
     @property
     def champ(self):
