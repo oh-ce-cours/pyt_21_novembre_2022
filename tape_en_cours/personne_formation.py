@@ -9,11 +9,11 @@ class Personne:
         self.nom = nom
 
     def est_majeur(self):
-        return (2022 - self.naissance) >
+        return (2022 - self.naissance) > 
 
 
 france = France()
-p1 = Personne(1990, "Matthieu", pays=france)
+p1 = Personne(1990, "Matthieu", nationalite=france)
 p2 = Personne(1991, "Matthieu")
 p3 = Personne(1993, "Matthieu")
 
