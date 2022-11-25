@@ -17,4 +17,6 @@ exit_button = ttk.Button(root, text="Click me :)", command=on_click_button)
 
 exit_button.pack(ipadx=5, ipady=5, expand=True)
 
-root.mainloop()
+while True:
+    event = root.listen()
+    
