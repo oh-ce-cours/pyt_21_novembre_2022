@@ -17,6 +17,8 @@ class CTS3:
         )
 
     def activation_champ(self):
+        Nfc.MPC_SelectFieldStrength(Nfc.FieldUnit.UNIT_MV_RANGE_25V, 10_000)
+
 
 
 # ni_cts3.OpenCommunication("192.168.142.1", log=True)
@@ -24,6 +26,6 @@ class CTS3:
 #     ni_cts3.ResourceType.CTS3_NFC_RESOURCE_ID,
 #     blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
 # )
-Nfc.MPC_SelectFieldStrength(Nfc.FieldUnit.UNIT_MV_RANGE_25V, 10_000)
+# Nfc.MPC_SelectFieldStrength(Nfc.FieldUnit.UNIT_MV_RANGE_25V, 10_000)
 time.sleep(5)
 ni_cts3.CloseCommunication()
