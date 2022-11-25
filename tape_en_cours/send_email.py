@@ -9,8 +9,8 @@ port = 587  # For starttls
 smtp_server = "smtp.gmail.com"
 
 
-sender = "matthieu@falce"
-receiver = "info@example.com"
+sender = "falce.matthieu@gmail.com"
+receiver = "matthieu@falce.net"
 
 msg = MIMEMultipart()
 msg["Subject"] = "Test mail with attachment"
