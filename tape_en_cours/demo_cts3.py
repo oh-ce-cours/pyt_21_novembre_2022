@@ -31,7 +31,7 @@ class CTS3:
             raise CTS3Exception(f"Les channels sont 1 ou 2, pas {channel}")
 
         daq_channel = getattr(Daq.DaqChannel, f"CH_{channel}_SMA")
-        trigger_source = getattr(Daq.DaqTrigSource.TRIG_CH1, f"TRIG_CH_{channel}")
+        trigger_source = getattr(Daq.DaqTrigSource, f"TRIG_CH_{channel}")
         ni_cts3.MPOS_OpenResource(
             ni_cts3.ResourceType.CTS3_DAQ_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
