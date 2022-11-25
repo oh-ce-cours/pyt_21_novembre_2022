@@ -34,6 +34,6 @@ class CTS3:
 # ni_cts3.CloseCommunication()
 
 andouillette = CTS3("192.168.142.1", log=True)
-andouillette.activer_champ()
+andouillette.activer_champ(10_000)
 time.sleep(5)
 andouillette.close()
