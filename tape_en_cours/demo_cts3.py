@@ -1,5 +1,5 @@
 import ni_cts3
-from ni_cts3 import Nfc
+from ni_cts3 import Nfc, Daq
 import time
 from pathlib import Path
 
