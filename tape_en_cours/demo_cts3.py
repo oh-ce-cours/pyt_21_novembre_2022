@@ -3,6 +3,7 @@ from ni_cts3 import Nfc, Daq
 import time
 from pathlib import Path
 
+class 
 
 class CTS3:
     def __init__(self, ip: str, log: bool):
@@ -23,7 +24,8 @@ class CTS3:
         )
 
     def set_dac(self, channel: int = 1):
-
+        if channel not in [1, 2]:
+            raise
         ni_cts3.MPOS_OpenResource(
             ni_cts3.ResourceType.CTS3_DAQ_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
