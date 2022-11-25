@@ -1,6 +1,5 @@
 import smtplib, ssl
 from os.path import basename
-from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 
