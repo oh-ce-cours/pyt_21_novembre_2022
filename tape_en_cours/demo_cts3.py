@@ -14,14 +14,10 @@ class CTS3:
             ni_cts3.ResourceType.CTS3_NFC_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
         )
+        self.set_dac()
         ni_cts3.SetDLLDebugMode(self.log_file)
-        ni_cts3.MPOS_OpenResource(
-            ni_cts3.ResourceType.CTS3_DAQ_RESOURCE_ID,
-            blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
-        )
         # ni_cts3.MPS_Beep(0.1)
         self.__puissance = None
-        self.set_dac()
 
     def set_dac(self):
         ni_cts3.Daq_SetChannel(ni_cts3.ACQ_CHANNEL, True, ni_cts3.DaqRange.RANGE_2000)
