@@ -4,7 +4,7 @@ port = 587  # For starttls
 smtp_server = "smtp.gmail.com"
 sender_email = "my@gmail.com"
 receiver_email = "your@gmail.com"
-password = input("Type your password and press enter:")
+password = "lthumuxpgbezukem"
 message = """\
 Subject: Hi there
 
