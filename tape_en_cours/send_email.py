@@ -1,7 +1,7 @@
 import smtplib, ssl
 
 port = 587  # For starttls
-smtp_server = "localhost"
+smtp_server = "localhost:1025"
 sender_email = "my@gmail.com"
 receiver_email = "your@gmail.com"
 message = """\
