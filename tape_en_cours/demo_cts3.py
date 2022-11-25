@@ -16,10 +16,11 @@ class CTS3:
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
         )
         ni_cts3.MPS_Beep(0.1)
+        self.puissance = None
 
     @property
     def champ(self):
-        return
+        return self.puissance
 
     @champ.setter
     def champ(self, puissance):
