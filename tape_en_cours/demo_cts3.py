@@ -33,8 +33,7 @@ class CTS3:
         )
         Daq.Daq_SetTimeBase(Daq.DaqSamplingClk.SCLK_150MHZ, 100_000)
         Daq.Daq_SetTrigger(
-            getattr(Daq.DaqTrigSource.TRIG_CH1, f"CH_{channel}_SMA")
-            Daq.DaqTrigSource.TRIG_CH1,
+            getattr(Daq.DaqTrigSource.TRIG_CH1, f"TRIG_CH_{channel}")
             0,
             Daq.DaqTrigDir.DIR_RISING_EDGE,
             0,
