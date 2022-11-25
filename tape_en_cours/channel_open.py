@@ -32,12 +32,8 @@ resource_id = None
 ###########
 def init():
     SetDLLMode(LibraryMode.MONOTHREADED)
-
-    SetDLLDebugMode(".\\dll_debug.log")
-
+    SetDLLDebugMode("./dll_debug.log")
     OpenCommunication(cts_ip)
-
-    global resource_id
     resource_id = MPOS_GetResourceID()
     MPOS_OpenResource(
         resource_id=resource_id, blocking_mode=ResourceBlockingMode.OVERRIDE
