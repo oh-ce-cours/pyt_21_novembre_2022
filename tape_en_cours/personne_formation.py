@@ -9,7 +9,7 @@ class Personne:
         self.nom = nom
 
     def est_majeur(self):
-        return (2022 - self.naissance) > Personne.AGE_MAJORITE
+        return (2022 - self.naissance) > 
 
 
 france = France()
