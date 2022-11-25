@@ -28,13 +28,11 @@ class CTS3:
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
         )
         Daq.Daq_SetChannel(Daq.ACQ_CHANNEL, True, Daq.DaqRange.RANGE_2000)
-        ni_cts3.Daq.Daq_SetTimeBase(
-            ni_cts3.Daq.DaqSamplingClk.SCLK_150MHZ, ni_cts3.Daq.points_number
-        )
-        ni_cts3.Daq.Daq_SetTrigger(
-            ni_cts3.Daq.TRIGGER,
-            ni_cts3.Daq.THRESHOLD,
-            ni_cts3.Daq.DaqTrigDir.DIR_RISING_EDGE,
+        Daq.Daq_SetTimeBase(Daq.DaqSamplingClk.SCLK_150MHZ, Daq.points_number)
+        Daq.Daq_SetTrigger(
+            Daq.TRIGGER,
+            Daq.THRESHOLD,
+            Daq.DaqTrigDir.DIR_RISING_EDGE,
             0,
         )
 
