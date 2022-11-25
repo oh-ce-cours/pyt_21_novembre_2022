@@ -25,8 +25,8 @@ class Personne:
         return (2022 - self.naissance) > self.nationalite.age_majorite
 
 
-france = France()
-usa = USA()
+# france = France()
+# usa = USA()
 p1 = Personne(1990, "Matthieu", nationalite=usa)
 p2 = Personne(1991, "Matthieu")
 p3 = Personne(1993, "Matthieu")
