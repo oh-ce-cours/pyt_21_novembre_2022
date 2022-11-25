@@ -59,7 +59,6 @@ def close_spy():
 
 def close():
     MPOS_CloseResource(resource_id=resource_id)
-
     CloseCommunication()
 
 
