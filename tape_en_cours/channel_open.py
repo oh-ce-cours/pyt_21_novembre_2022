@@ -32,9 +32,7 @@ resource_id = None
 ###########
 def init():
     SetDLLMode(LibraryMode.MONOTHREADED)
-
     SetDLLDebugMode(".\\dll_debug.log")
-
     OpenCommunication(cts_ip)
 
     global resource_id
