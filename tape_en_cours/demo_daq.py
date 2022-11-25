@@ -33,7 +33,7 @@ __license__ = "unlicense.org"
 FILE_NAME = Path(__file__).with_suffix(".mpat")
 DURATION = 10e-6  # 10 µs
 SAMPLING_RATE = 150e6  # 150 MHz
-ACQ_CHANNEL = DaqChannel.CH  # CH2 SMA
+ACQ_CHANNEL = DaqChannel.CH_1_SMA  # CH2 SMA
 
 # Trigger configuration
 TRIGGER = DaqTrigSource.TRIG_CH2
