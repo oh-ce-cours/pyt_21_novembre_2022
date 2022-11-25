@@ -31,7 +31,7 @@ class CTS3:
         ni_cts3.CloseCommunication()
 
     def __enter__(self):
-        yield self
+        return self
 
     def __exit__(self, *args):
         self.close()
