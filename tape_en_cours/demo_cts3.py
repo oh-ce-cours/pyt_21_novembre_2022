@@ -27,12 +27,14 @@ class CTS3:
     def set_dac(self, channel: int = 1):
         if channel not in [1, 2]:
             raise CTS3Exception(f"Les channels sont 1 ou 2, pas {channel}")
+        
+        getattr(Daq.DaqChannel, f"CH_{channel}_SMA"
         ni_cts3.MPOS_OpenResource(
             ni_cts3.ResourceType.CTS3_DAQ_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
         )
         Daq.Daq_SetChannel(
-            getattr(Daq.DaqChannel, f"CH_{channel}_SMA"), True, Daq.DaqRange.RANGE_2000
+            ), True, Daq.DaqRange.RANGE_2000
         )
         Daq.Daq_SetTimeBase(Daq.DaqSamplingClk.SCLK_150MHZ, 100_000)
         Daq.Daq_SetTrigger(
