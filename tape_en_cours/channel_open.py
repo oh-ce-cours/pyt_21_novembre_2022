@@ -77,7 +77,7 @@ def main():
     MPC_NfcConfiguration(
         mode=NfcMode.NFC_PASSIVE_MODE, initiator=False, data_rate=NfcDataRate.NFC_106
     )
-    print(perf_counter())
+    tic = perf_counter()
     MPC_ChannelOpen()
     print(perf_counter())
     MPC_ChannelClose()
