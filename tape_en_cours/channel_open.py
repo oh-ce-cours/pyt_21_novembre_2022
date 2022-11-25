@@ -50,9 +50,12 @@ def init_spy():
     )
     # Needed for FC Detect / FC Detect Ex to be displayed properly
 
-
     BeginDownloadTo("./logs.mplog")
     MPS_OpenLog()
+
+    MPC_NfcConfiguration(
+        mode=NfcMode.NFC_PASSIVE_MODE, initiator=False, data_rate=NfcDataRate.NFC_106
+    )
 
 
 def close_spy():
