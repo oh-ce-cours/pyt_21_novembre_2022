@@ -39,7 +39,7 @@ class CTS3:
         )
         Daq.Daq_SetTimeBase(Daq.DaqSamplingClk.SCLK_150MHZ, 100_000)
         Daq.Daq_SetTrigger(
-            trigger_source
+            trigger_source,
             0,
             Daq.DaqTrigDir.DIR_RISING_EDGE,
             0,
