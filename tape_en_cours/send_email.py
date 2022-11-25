@@ -3,13 +3,13 @@ from os.path import basename
 from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 
-
 port = 587  # For starttls
 smtp_server = "smtp.gmail.com"
 
 
 sender = "falce.matthieu@gmail.com"
 receiver = "matthieu@falce.net"
+# https://support.google.com/accounts/answer/185833?hl=fr
 password = "lthumuxpgbezukem"
 
 msg = MIMEMultipart()
