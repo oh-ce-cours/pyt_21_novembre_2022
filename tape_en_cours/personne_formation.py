@@ -4,7 +4,7 @@ class France:
 
 
 class Personne:
-    def __init__(self, naissance, nom, zerty: France):
+    def __init__(self, dfg, nom, zerty: France):
         self.naissance = naissance
         self.nom = nom
         self.nationalite = zerty
