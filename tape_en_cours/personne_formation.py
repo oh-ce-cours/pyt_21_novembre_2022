@@ -16,4 +16,5 @@ p3 = Personne(1993, "Matthieu")
 print(id(p1.AGE_MAJORITE), id(p2.AGE_MAJORITE), id(p3.AGE_MAJORITE))
 Personne.AGE_MAJORITE = 10
 p2.AGE_MAJORITE = 343
+print(dir(p2))
 print(id(p1.AGE_MAJORITE), id(p2.AGE_MAJORITE), id(p3.AGE_MAJORITE))
