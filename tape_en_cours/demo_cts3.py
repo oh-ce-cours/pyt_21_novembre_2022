@@ -7,6 +7,10 @@ class CTS3:
     def __init__(self, ip: str, log: bool):
         self.ip = ip
         ni_cts3.OpenCommunication(ip, log=log)
+        ni_cts3.MPOS_OpenResource(
+            ni_cts3.ResourceType.CTS3_NFC_RESOURCE_ID,
+            blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
+        )
 
 
 ni_cts3.OpenCommunication("192.168.142.1", log=True)
