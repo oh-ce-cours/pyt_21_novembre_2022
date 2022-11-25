@@ -19,7 +19,8 @@ class Personne:
 
 
 france = France()
-p1 = Personne(1990, "Matthieu", nationalite=france)
+usa = USA()
+p1 = Personne(1990, "Matthieu", nationalite=usa)
 p2 = Personne(1991, "Matthieu")
 p3 = Personne(1993, "Matthieu")
 
