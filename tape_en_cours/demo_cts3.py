@@ -24,8 +24,10 @@ class CTS3:
         self.set_dac()
 
     def set_dac(self):
-        ni_cts3.Daq_SetChannel(ACQ_CHANNEL, True, DaqRange.RANGE_2000)
-        Daq_SetTimeBase(DaqSamplingClk.SCLK_150MHZ, points_number)
+        ni_cts3.Daq_SetChannel(ni_cts3.ACQ_CHANNEL, True, ni_cts3.DaqRange.RANGE_2000)
+        ni_cts3.Daq_SetTimeBase(
+            ni_cts3.DaqSamplingClk.SCLK_150MHZ, ni_cts3.points_number
+        )
         Daq_SetTrigger(TRIGGER, THRESHOLD, DaqTrigDir.DIR_RISING_EDGE, 0)
 
     @property
