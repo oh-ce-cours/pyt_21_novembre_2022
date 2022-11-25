@@ -4,7 +4,7 @@ import time
 from pathlib import Path
 
 class CTS3Exception(ValueError):
-    
+    pass
 
 class CTS3:
     def __init__(self, ip: str, log: bool):
