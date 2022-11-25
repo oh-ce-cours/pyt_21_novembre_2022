@@ -16,6 +16,7 @@ class CTS3:
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
         )
 
+    def 
 
 # ni_cts3.OpenCommunication("192.168.142.1", log=True)
 # ni_cts3.MPOS_OpenResource(
