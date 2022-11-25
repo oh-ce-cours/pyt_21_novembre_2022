@@ -19,7 +19,7 @@ class CTS3:
 
     @property
     def champ(self):
-        pass
+        return Nfc.
 
     @champ.setter
     def champ(self, puissance):
