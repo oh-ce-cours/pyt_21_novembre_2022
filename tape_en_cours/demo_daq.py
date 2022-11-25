@@ -36,7 +36,7 @@ SAMPLING_RATE = 150e6  # 150 MHz
 ACQ_CHANNEL = DaqChannel.CH_1_SMA  # CH2 SMA
 
 # Trigger configuration
-TRIGGER = DaqTrigSource.TRIG_CH2
+TRIGGER = DaqTrigSource.TRIG_CH1
 THRESHOLD = 0  # 0 V
 TIMEOUT = 2  # 2 s
 
