@@ -16,7 +16,7 @@ class CTS3:
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
         )
 
-    def activation_champ(self):
+    def activer_champ(self):
         Nfc.MPC_SelectFieldStrength(Nfc.FieldUnit.UNIT_MV_RANGE_25V, 10_000)
 
     def close(self):
@@ -33,4 +33,4 @@ class CTS3:
 # ni_cts3.CloseCommunication()
 
 andouillette = CTS3("192.168.142.1", log=True)
-andouillette.activation_champ()
+andouillette.activer_champ()
