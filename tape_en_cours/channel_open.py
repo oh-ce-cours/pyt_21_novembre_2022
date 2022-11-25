@@ -79,7 +79,8 @@ def main():
     )
     tic = perf_counter()
     MPC_ChannelOpen()
-    print(perf_counter() - tic, )
+    tac = perf_counter()
+    print(tac - tic, tic, tac)
     MPC_ChannelClose()
 
     ##################
