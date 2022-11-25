@@ -1,6 +1,7 @@
+class Pays:
+    pass
 
-
-class France:
+class France(Pays):
     def __init__(self):
         self.age_majorite = 18
 
