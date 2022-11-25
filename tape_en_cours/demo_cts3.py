@@ -27,8 +27,8 @@ class CTS3:
     def set_dac(self, channel: int = 1):
         if channel not in [1, 2]:
             raise CTS3Exception(f"Les channels sont 1 ou 2, pas {channel}")
-        
-        getattr(Daq.DaqChannel, f"CH_{channel}_SMA"
+
+        daq_channel = getattr(Daq.DaqChannel, f"CH_{channel}_SMA"
         ni_cts3.MPOS_OpenResource(
             ni_cts3.ResourceType.CTS3_DAQ_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
@@ -38,7 +38,7 @@ class CTS3:
         )
         Daq.Daq_SetTimeBase(Daq.DaqSamplingClk.SCLK_150MHZ, 100_000)
         Daq.Daq_SetTrigger(
-            getattr(Daq.DaqTrigSource.TRIG_CH1, f"TRIG_CH_{channel}")
+            
             0,
             Daq.DaqTrigDir.DIR_RISING_EDGE,
             0,
