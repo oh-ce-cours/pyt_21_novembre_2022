@@ -9,7 +9,7 @@ class CTS3Exception(ValueError):
 
 
 class CTS3:
-    def __init__(self, ip: str, log: bool):
+    def __init_(self, ip: str, log: bool):
         self.ip = ip
         self.log_file = Path(__file__).with_suffix(".log")
         # print(self.log_file)
