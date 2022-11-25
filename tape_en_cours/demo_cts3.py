@@ -38,7 +38,6 @@ class CTS3:
         )
         Daq.Daq_SetChannel(daq_channel, True, Daq.DaqRange.RANGE_2000)
         Daq.Daq_SetTimeBase(Daq.DaqSamplingClk.SCLK_150MHZ, 100_000)
-        configure()
         Daq.Daq_SetTrigger(
             trigger_source,
             0,
