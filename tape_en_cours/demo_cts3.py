@@ -1,6 +1,7 @@
 import ni_cts3
 from ni_cts3 import Nfc
 import time
+from pathlib import Path
 
 
 class CTS3:
