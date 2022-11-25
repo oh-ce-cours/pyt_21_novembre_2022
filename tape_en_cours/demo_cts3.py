@@ -22,7 +22,8 @@ class CTS3:
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
         )
 
-    def set_dac(self, channel):
+    def set_dac(self, channel: int = 1):
+        
         ni_cts3.MPOS_OpenResource(
             ni_cts3.ResourceType.CTS3_DAQ_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
