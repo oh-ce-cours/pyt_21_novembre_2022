@@ -27,7 +27,9 @@ class CTS3:
             ni_cts3.ResourceType.CTS3_DAQ_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
         )
-        ni_cts3.Daq_SetChannel(ni_cts3.ACQ_CHANNEL, True, ni_cts3.DaqRange.RANGE_2000)
+        ni_cts3.Daq.Daq_SetChannel(
+            ni_cts3.ACQ_CHANNEL, True, ni_cts3.DaqRange.RANGE_2000
+        )
         ni_cts3.Daq_SetTimeBase(
             ni_cts3.DaqSamplingClk.SCLK_150MHZ, ni_cts3.points_number
         )
