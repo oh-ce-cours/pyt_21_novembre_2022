@@ -45,9 +45,9 @@ def init():
 
 
 def init_spy():
-    MPC_NfcConfiguration(
-        mode=NfcMode.NFC_PASSIVE_MODE, initiator=True, data_rate=NfcDataRate.NFC_106
-    )
+    # MPC_NfcConfiguration(
+    #     mode=NfcMode.NFC_PASSIVE_MODE, initiator=True, data_rate=NfcDataRate.NFC_106
+    # )
     # Needed for FC Detect / FC Detect Ex to be displayed properly
     MPC_NfcConfiguration(
         mode=NfcMode.NFC_PASSIVE_MODE, initiator=False, data_rate=NfcDataRate.NFC_106
