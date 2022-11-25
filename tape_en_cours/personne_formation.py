@@ -13,4 +13,5 @@ p1 = Personne(1990, "Matthieu")
 p2 = Personne(1991, "Matthieu")
 p3 = Personne(1993, "Matthieu")
 
+
 print(id(p1.AGE_MAJORITE), id(p2.AGE_MAJORITE), id(p3.AGE_MAJORITE))
