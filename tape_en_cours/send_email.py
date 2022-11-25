@@ -21,6 +21,8 @@ filename = "J1.ipynb"
 with open(filename, "r") as f:
     part = MIMEApplication(f.read(), Name=basename(filename))
 
+part["Content-Disposition"] = 'attachment; filename="{}"'.format(basename(filename))
+msg.attach(part)
 
 context = ssl.create_default_context()
 with smtplib.SMTP(smtp_server, port) as server:
