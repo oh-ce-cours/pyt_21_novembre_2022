@@ -120,7 +120,7 @@ def on_closing() -> None:
 
 
 root = None
-host = input("CTS3 hostname: ")
+# host = input("CTS3 hostname: ")
 try:
     OpenCommunication("192.168.142.1")
 
