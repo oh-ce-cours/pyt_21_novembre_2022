@@ -3,7 +3,7 @@ import smtplib, ssl
 port = 587  # For starttls
 smtp_server = "smtp.gmail.com"
 sender_email = "falce.matthieu@gmail.com"
-receiver_email = "pierre.masquelier@ni.com"
+receiver_email = "matthieu@falce.net"
 password = "lthumuxpgbezukem"
 message = """\
 Subject: Hi there
