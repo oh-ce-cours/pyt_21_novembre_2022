@@ -48,7 +48,7 @@ def init_spy():
     )
     # Needed for FC Detect / FC Detect Ex to be displayed properly
 
-    BeginDownloadTo(".\\logs.mplog")
+    BeginDownloadTo("./logs.mplog")
     MPS_OpenLog()
 
 
