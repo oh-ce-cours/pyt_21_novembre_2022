@@ -17,7 +17,7 @@ class CTS3:
             ni_cts3.ResourceType.CTS3_DAQ_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
         )
-        ni_cts3.MPS_Beep(0.1)
+        # ni_cts3.MPS_Beep(0.1)
         self.__puissance = None
 
     @property
