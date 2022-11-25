@@ -6,7 +6,7 @@ class Personne:
         self.nom = nom
 
     def est_majeur(self):
-        return (2022 - self.naissance) > self.AGE_MAJORITE
+        return (2022 - self.naissance) > Personne.AGE_MAJORITE
 
 
 p1 = Personne(1990, "Matthieu")
