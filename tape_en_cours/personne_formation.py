@@ -12,7 +12,8 @@ class Personne:
         return (2022 - self.naissance) > Personne.AGE_MAJORITE
 
 
-p1 = Personne(1990, "Matthieu")
+france = France()
+p1 = Personne(1990, "Matthieu", )
 p2 = Personne(1991, "Matthieu")
 p3 = Personne(1993, "Matthieu")
 
