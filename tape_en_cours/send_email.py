@@ -31,5 +31,5 @@ with smtplib.SMTP(smtp_server, port) as server:
     server.ehlo()  # Can be omitted
     server.starttls(context=context)
     server.ehlo()  # Can be omitted
-    server.login(sender_email, password)
+    server.login(sender, password)
     server.sendmail(sender_email, receiver_email, message)
