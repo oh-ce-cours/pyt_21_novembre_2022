@@ -10,14 +10,17 @@ class CTS3:
         self.log_file = Path(__file__).with_suffix(".log")
         print(self.log_file)
         ni_cts3.OpenCommunication(ip, log=log)
-        ni_cts3.MPOS_OpenResource(
-            ni_cts3.ResourceType.CTS3_NFC_RESOURCE_ID,
-            blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
-        )
+        self.new_method()
         self.set_dac()
         ni_cts3.SetDLLDebugMode(self.log_file)
         # ni_cts3.MPS_Beep(0.1)
         self.__puissance = None
+
+    def new_method(self):
+        ni_cts3.MPOS_OpenResource(
+            ni_cts3.ResourceType.CTS3_NFC_RESOURCE_ID,
+            blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
+        )
 
     def set_dac(self):
         ni_cts3.MPOS_OpenResource(
