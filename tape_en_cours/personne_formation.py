@@ -4,10 +4,10 @@ class France:
 
 
 class Personne:
-    def __init__(self, naissance, nom, nationalite: France):
+    def __init__(self, naissance, nom, hjkl: France):
         self.naissance = naissance
         self.nom = nom
-        self.nationalite = nationalite
+        self.nationalite = hjkl
 
     def est_majeur(self):
         return (2022 - self.naissance) > self.nationalite.age_majorite
