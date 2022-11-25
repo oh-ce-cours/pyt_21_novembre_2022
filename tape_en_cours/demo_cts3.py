@@ -80,4 +80,5 @@ andouillette.close()
 
 with CTS3("192.168.142.1", log=True) as andouillette:
     andouillette.champ = 10_000
+    andouillette.set_dac()
     time.sleep(5)
