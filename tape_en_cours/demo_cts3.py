@@ -3,7 +3,7 @@ from ni_cts3 import Nfc
 import time
 
 class CTS3:
-    def __init__(self, )
+    def __init__(self, ip:str, log:bool)
 
 ni_cts3.OpenCommunication("192.168.142.1", log=True)
 ni_cts3.MPOS_OpenResource(
