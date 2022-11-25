@@ -1,3 +1,5 @@
+
+
 class France:
     def __init__(self):
         self.age_majorite = 18
