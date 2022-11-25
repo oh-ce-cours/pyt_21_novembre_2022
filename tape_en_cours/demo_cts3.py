@@ -11,7 +11,7 @@ class CTS3:
             ni_cts3.ResourceType.CTS3_NFC_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
         )
-        ni_cts3.S
+        ni_cts3.SetDLLDebugMode()
         ni_cts3.MPOS_OpenResource(
             ni_cts3.ResourceType.CTS3_DAQ_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
