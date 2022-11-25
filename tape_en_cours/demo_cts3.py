@@ -17,12 +17,14 @@ class CTS3:
         )
         ni_cts3.MPS_Beep(0.1)
 
-    @propery
+    @property
     def champ(self, puissance):
         Nfc.MPC_SelectFieldStrength(Nfc.FieldUnit.UNIT_MV_RANGE_25V, puissance)
 
     def close(self):
         ni_cts3.CloseCommunication()
+
+    
 
 
 # ni_cts3.OpenCommunication("192.168.142.1", log=True)
