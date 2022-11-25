@@ -10,7 +10,7 @@ root.title('Button Demo')
 # exit button
 exit_button = ttk.Button(
     root,
-    text='Exit',
+    text='Click me :)',
     command=lambda: root.quit()
 )
 
