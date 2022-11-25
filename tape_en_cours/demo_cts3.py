@@ -24,7 +24,7 @@ class CTS3:
     def close(self):
         ni_cts3.CloseCommunication()
 
-    
+    def 
 
 
 # ni_cts3.OpenCommunication("192.168.142.1", log=True)
