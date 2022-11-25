@@ -32,4 +32,5 @@ class CTS3:
 # time.sleep(5)
 # ni_cts3.CloseCommunication()
 
-andouillette = CTS3()
+andouillette = CTS3("192.168.142.1", log=True)
+andouillette.activation_champ()
