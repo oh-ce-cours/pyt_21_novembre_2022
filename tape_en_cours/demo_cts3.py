@@ -3,8 +3,10 @@ from ni_cts3 import Nfc, Daq
 import time
 from pathlib import Path
 
+
 class CTS3Exception(ValueError):
     pass
+
 
 class CTS3:
     def __init__(self, ip: str, log: bool):
@@ -34,12 +36,10 @@ class CTS3:
             ni_cts3.ResourceType.CTS3_DAQ_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
         )
-        Daq.Daq_SetChannel(
-            daq_channel, True, Daq.DaqRange.RANGE_2000
-        )
+        Daq.Daq_SetChannel(daq_channel, True, Daq.DaqRange.RANGE_2000)
         Daq.Daq_SetTimeBase(Daq.DaqSamplingClk.SCLK_150MHZ, 100_000)
         Daq.Daq_SetTrigger(
-            trigger_source
+            trigger_source,
             0,
             Daq.DaqTrigDir.DIR_RISING_EDGE,
             0,
