@@ -17,7 +17,7 @@ msg["Subject"] = "Test mail with attachment"
 msg["From"] = "admin@example.com"
 msg["To"] = "info@example.com"
 
-filename = "words.txt"
+filename = "J1.ipynb"
 with open(filename, "r") as f:
     part = MIMEApplication(f.read(), Name=basename(filename))
 
