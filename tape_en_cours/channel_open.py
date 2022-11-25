@@ -73,10 +73,6 @@ def main():
     init()
     init_spy()
     ##################
-
-    MPC_NfcConfiguration(
-        mode=NfcMode.NFC_PASSIVE_MODE, initiator=False, data_rate=NfcDataRate.NFC_106
-    )
     tic = perf_counter()
     MPC_ChannelOpen()
     tac = perf_counter()
