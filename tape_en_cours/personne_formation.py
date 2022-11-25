@@ -11,7 +11,9 @@ class USA(Pays):
     def __init__(self):
         self.age_majorite = 21
 
-pays = {}
+
+pays = {"USA": 21, "France": 18}
+
 
 class Personne:
     def __init__(self, naissance, nom, nationalite):
