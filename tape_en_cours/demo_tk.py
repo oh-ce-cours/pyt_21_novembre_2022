@@ -4,6 +4,7 @@ from tkinter import ttk
 
 def on_click_button():
     print("clicked")
+    time.sleep(10)
 
 
 # root window
@@ -17,7 +18,4 @@ exit_button = ttk.Button(root, text="Click me :)", command=on_click_button)
 
 exit_button.pack(ipadx=5, ipady=5, expand=True)
 
-while True:
-    event = root.listen()
-    event.dispatch()
-    time.sleep(0.01)
+root.mainloop()
