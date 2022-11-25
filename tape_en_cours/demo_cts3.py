@@ -17,7 +17,8 @@ class CTS3:
         )
         ni_cts3.MPS_Beep(0.1)
 
-    def activer_champ(self, puissance):
+    @propery
+    def champ(self, puissance):
         Nfc.MPC_SelectFieldStrength(Nfc.FieldUnit.UNIT_MV_RANGE_25V, puissance)
 
     def close(self):
@@ -34,6 +35,6 @@ class CTS3:
 # ni_cts3.CloseCommunication()
 
 andouillette = CTS3("192.168.142.1", log=True)
-andouillette.champ (10_000)
+andouillette.champ = 10_000
 time.sleep(5)
 andouillette.close()
