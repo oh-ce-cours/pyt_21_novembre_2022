@@ -16,8 +16,6 @@ msg = MIMEMultipart()
 msg["Subject"] = "Test mail with attachment"
 msg["From"] = sender
 msg["To"] = receiver
-
-
 filename = "J1.ipynb"
 with open(filename, "r") as f:
     part = MIMEApplication(f.read(), Name=basename(filename))
