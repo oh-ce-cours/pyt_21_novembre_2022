@@ -14,8 +14,8 @@ receiver = "matthieu@falce.net"
 
 msg = MIMEMultipart()
 msg["Subject"] = "Test mail with attachment"
-msg["From"] = "admin@example.com"
-msg["To"] = "info@example.com"
+msg["From"] = sender
+msg["To"] = receiver
 
 filename = "J1.ipynb"
 with open(filename, "r") as f:
