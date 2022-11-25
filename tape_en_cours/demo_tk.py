@@ -19,4 +19,5 @@ exit_button.pack(ipadx=5, ipady=5, expand=True)
 
 while True:
     event = root.listen()
-    
+    event.dispatch()
+    time.sleep(0.01)
