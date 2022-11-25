@@ -33,7 +33,7 @@ class CTS3:
     def __enter__(self):
         yield self
 
-    def __exit__(self):
+    def __exit__(self, *args):
         self.close()
 
 
