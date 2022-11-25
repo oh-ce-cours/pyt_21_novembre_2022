@@ -37,7 +37,7 @@ def init():
     OpenCommunication(cts_ip)
 
     MPOS_OpenResource(
-        ResourceType.CTS3_NFC_RESOURCE_ID,
+        resource_id,
         blocking_mode=ResourceBlockingMode.OVERRIDE,
     )
 
