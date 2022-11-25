@@ -7,7 +7,7 @@ from ni_cts3 import (
     OpenCommunication,
     MPOS_GetResourceID,
     MPOS_OpenResource,
-    
+    ResourceType,
     MPS_ResetHard,
     MPOS_CloseResource,
     CloseCommunication,
@@ -26,7 +26,7 @@ from ni_cts3 import LibraryMode, ResourceBlockingMode
 from ni_cts3.Nfc import NfcMode, NfcDataRate
 
 cts_ip = "192.168.142.1"
-resource_id = MPOS_GetResourceID()
+resource_id = ResourceType.CTS3_NFC_RESOURCE_ID
 
 ############
 # HELPERS
