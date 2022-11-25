@@ -1,18 +1,19 @@
 class Pays:
     pass
 
+
 class France(Pays):
     def __init__(self):
         self.age_majorite = 18
 
 
-class USA:
+class USA(Pays):
     def __init__(self):
         self.age_majorite = 21
 
 
 class Personne:
-    def __init__(self, naissance, nom, nationalite: France):
+    def __init__(self, naissance, nom, nationalite: Pays):
         self.naissance = naissance
         self.nom = nom
         self.nationalite = nationalite
