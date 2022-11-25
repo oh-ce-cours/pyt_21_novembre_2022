@@ -13,7 +13,7 @@ class USA(Pays):
 
 
 class Personne:
-    def __init__(self, naissance, nom, nationalite: Pays):
+    def __init__(self, naissance, nom, nationalit):
         self.naissance = naissance
         self.nom = nom
         self.nationalite = nationalite
