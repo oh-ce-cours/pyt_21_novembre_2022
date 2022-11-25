@@ -34,3 +34,5 @@ class CTS3:
 
 andouillette = CTS3("192.168.142.1", log=True)
 andouillette.activer_champ()
+time.sleep(5)
+andouillette.close()
