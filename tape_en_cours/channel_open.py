@@ -53,9 +53,6 @@ def init_spy():
     BeginDownloadTo("./logs.mplog")
     MPS_OpenLog()
 
-    MPC_NfcConfiguration(
-        mode=NfcMode.NFC_PASSIVE_MODE, initiator=False, data_rate=NfcDataRate.NFC_106
-    )
 
 
 def close_spy():
