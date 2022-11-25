@@ -26,7 +26,7 @@ class CTS3:
 
     def set_dac(self, channel: int = 1):
         if channel not in [1, 2]:
-            raise CTS3Exception("Les channels sont 1 ou 2, pas")
+            raise CTS3Exception(f"Les channels sont 1 ou 2, pas {channel}")
         ni_cts3.MPOS_OpenResource(
             ni_cts3.ResourceType.CTS3_DAQ_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
