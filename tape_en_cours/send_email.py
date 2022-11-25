@@ -32,4 +32,4 @@ with smtplib.SMTP(smtp_server, port) as server:
     server.starttls(context=context)
     server.ehlo()  # Can be omitted
     server.login(sender, password)
-    server.sendmail(sender_email, receiver_email, message)
+    server.sendmail(sender, receiver, msg.as_string())
