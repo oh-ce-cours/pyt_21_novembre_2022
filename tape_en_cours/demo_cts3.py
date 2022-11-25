@@ -14,7 +14,7 @@ class CTS3:
         self.log_file = Path(__file__).with_suffix(".log")
         # print(self.log_file)
         ni_cts3.OpenCommunication(ip, log=log)
-        ni_cts3.SetDLLDebugMode("./toto.log")
+        ni_cts3.SetDLLDebugMode("/tmp/toto.log")
         self.set_NFC()
         self.set_dac()
         # ni_cts3.MPS_Beep(0.1)
