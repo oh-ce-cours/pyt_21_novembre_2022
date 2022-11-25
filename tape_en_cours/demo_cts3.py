@@ -1,4 +1,4 @@
 import ni_cts3
+from ni_cts3 import 
 
 ni_cts3.OpenCommunication("192.168.142.1", log=True)
-ni_cts3.Nfc.
