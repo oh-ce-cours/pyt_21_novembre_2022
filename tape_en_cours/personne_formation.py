@@ -4,7 +4,7 @@ class France:
 
 
 class Personne:
-    def __init__(self, naissance, nom, ):
+    def __init__(self, naissance, nom, pays: France):
         self.naissance = naissance
         self.nom = nom
 
