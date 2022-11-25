@@ -2,7 +2,7 @@ class Personne:
     def __init__(self, naissance, nom):
         self.naissance = naissance
         self.nom = nom
-        self.AGE_MAJORITE = "toto"
+        self.AGE_MAJORITE = [1]
 
     def est_majeur(self):
         return (2022 - self.naissance) > self.AGE_MAJORITE
