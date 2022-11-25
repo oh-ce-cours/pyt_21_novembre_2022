@@ -3,7 +3,7 @@ from ni_cts3 import Nfc, Daq
 import time
 from pathlib import Path
 
-class 
+class CTS3Exception()
 
 class CTS3:
     def __init__(self, ip: str, log: bool):
