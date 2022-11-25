@@ -22,6 +22,8 @@ class CTS3:
         # ni_cts3.MPS_Beep(0.1)
         self.__puissance = None
 
+        
+
     @property
     def champ(self):
         return self.__puissance
