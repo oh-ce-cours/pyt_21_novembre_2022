@@ -1,5 +1,7 @@
 class France:
-    
+    def __init__(self):
+        self.age_majorite = 18
+
 
 class Personne:
     def __init__(self, naissance, nom):
