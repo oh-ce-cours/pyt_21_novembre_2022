@@ -8,12 +8,13 @@ class CTS3:
     def __init__(self, ip: str, log: bool):
         self.ip = ip
         self.log_file = Path(__file__).with_suffix(".log")
+        print(self.log_file)
         ni_cts3.OpenCommunication(ip, log=log)
         ni_cts3.MPOS_OpenResource(
             ni_cts3.ResourceType.CTS3_NFC_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
         )
-        ni_cts3.SetDLLDebugMode()
+        ni_cts3.SetDLLDebugMode(self.log_file)
         ni_cts3.MPOS_OpenResource(
             ni_cts3.ResourceType.CTS3_DAQ_RESOURCE_ID,
             blocking_mode=ni_cts3.ResourceBlockingMode.OVERRIDE,
