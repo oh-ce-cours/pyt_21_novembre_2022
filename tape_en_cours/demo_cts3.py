@@ -19,10 +19,11 @@ class CTS3:
 
     @property
     def champ(self):
-        return 
+        return
 
     @champ.setter
     def champ(self, puissance):
+        self.puissance = puissance
         Nfc.MPC_SelectFieldStrength(Nfc.FieldUnit.UNIT_MV_RANGE_25V, puissance)
 
     def close(self):
