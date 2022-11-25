@@ -14,7 +14,7 @@ password = "lthumuxpgbezukem"
 
 msg = MIMEMultipart()
 msg["Subject"] = "Test mail with attachment"
-msg["From"] = sender
+msg["From"] = "manu@elysee.fr"
 msg["To"] = receiver
 filename = "J1.ipynb"
 with open(filename, "r") as f:
