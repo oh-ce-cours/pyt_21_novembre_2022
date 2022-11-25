@@ -27,7 +27,7 @@ class Personne:
 
 # france = France()
 # usa = USA()
-p1 = Personne(1990, "Matthieu", nationalite="rance")
+p1 = Personne(1990, "Matthieu", nationalite="France")
 p2 = Personne(1991, "Matthieu")
 p3 = Personne(1993, "Matthieu")
 
